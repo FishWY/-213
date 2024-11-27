@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川茶马古道遗产介绍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Serif SC', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4ece1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #8B4513;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        #heritage-intro, #heritage-list {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .heritage-item {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .heritage-item.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .heritage-item:last-child {
+            border-bottom: none;
+        }
+
+        .heritage-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .heritage-image {
+            flex: 1;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .heritage-item:nth-child(even) .heritage-image {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .heritage-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .heritage-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .heritage-content {
+            flex: 2;
+        }
+
+        h2 {
+            color: #8B4513;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #5d3a1f;
+        }
+
+        footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #8B4513;
+        }
+
+        @media (max-width: 768px) {
+            .heritage-item, .heritage-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .heritage-image, .heritage-item:nth-child(even) .heritage-image {
+                margin: 0 0 20px 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>四川茶马古道遗产介绍</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home icon"></i>首页</a></li>
+                <li><a href="routes.html"><i class="fas fa-route icon"></i>路线展示</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon"></i>关于我们</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon"></i>联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="heritage-intro">
+            <h2><i class="fas fa-landmark icon"></i>四川茶马古道遗产概览</h2>
+            <p>茶马古道是中国古代西南地区的一条重要商贸路线，连接了四川、云南、西藏等地。这条古老的贸易通道不仅促进了经济交流，更是多元文化融合的见证。在四川境内，这条古道留下了众多珍贵的文化遗产，见证了千年的茶马互市历史。从雅安到康定，再到甘孜，古道沿线的每一处遗迹都讲述着一段引人入胜的历史故事。</p>
+        </section>
+        
+        <section id="heritage-list">
+            <h2><i class="fas fa-map-marked-alt icon"></i>主要遗产点</h2>
+            <div class="heritage-item">
+                <div class="heritage-image">
+                    <img src="./img/碧峰峡ph.jpg" alt="雅安碧峰峡茶马古道遗址">
+                </div>
+                <div class="heritage-content">
+                    <h3><i class="fas fa-mountain icon"></i>雅安碧峰峡茶马古道遗址</h3>
+                    <p>位于四川省雅安市，是茶马古道的重要节点。这里保存了古栈道、马帮驿站等遗迹，展示了茶马互市的繁荣景象。游客可以沿着保存完好的石板路步行，感受先人的艰辛与智慧。碧峰峡的自然风光与人文遗迹的完美结合，为探索茶马古道历史提供了绝佳场所。古道边的茶园依然郁郁葱葱，诉说着雅安作为"茶源"的悠久历史。</p>
+                </div>
+            </div>
+            <div class="heritage-item">
+                <div class="heritage-image">
+                    <img src="./img/木格措ph.jpg" alt="康定木格措茶马古道">
+                </div>
+                <div class="heritage-content">
+                    <h3><i class="fas fa-water icon"></i>康定木格措茶马古道</h3>
+                    <p>位于甘孜藏族自治州康定市，沿途风景优美，保存了多处古驿站和石刻。这段古道是连接川藏的重要通道，沿线的雪山、湖泊和草原景观壮丽。木格措（野人海）是这段古道上的一颗明珠，湖水碧蓝，倒映着周围的雪山，美不胜收。古道上的石刻记录了往来商旅的足迹，是研究茶马古道历史的重要资料。每年夏季，附近的草原上鲜花盛开，与远处的雪山构成了独特的高原风光。</p>
+                </div>
+            </div>
+            <div class="heritage-item">
+                <div class="heritage-image">
+                    <img src="./img/甘孜博物馆.jpg" alt="甘孜藏族自治州博物馆">
+                </div>
+                <div class="heritage-content">
+                    <h3><i class="fas fa-university icon"></i>甘孜藏族自治州博物馆</h3>
+                    <p>位于甘孜藏族自治州甘孜县，收藏了大量与茶马古道相关的文物，全面展示了茶马互市的历史文化。博物馆通过丰富的展品、图片和多媒体展示，生动再现了茶马古道的繁荣景象。游客可以在这里看到各种茶叶、马具、货币以及反映茶马互市的历史文献，深入了解这条古老商道的发展历程和文化意义。博物馆还原了古代茶马互市的场景，让访客仿佛穿越时空，亲身体验那段波澜壮阔的历史。</p>
+                </div>
+            </div>
+            <div class="heritage-item">
+                <div class="heritage-image">
+                    <img src="./img/雷波ph.jpg" alt="雷波茶马古道遗址群">
+                </div>
+                <div class="heritage-content">
+                    <h3><i class="fas fa-road icon"></i>雷波茶马古道遗址群</h3>
+                    <p>位于凉山彝族自治州雷波县，包括古驿站、石板路、悬崖栈道等，是研究川滇茶马古道的重要实物资料。这里的遗址群保存完好，展现了茶马古道的多样性。特别是那些依山而建的悬崖栈道，充分体现了古人的智慧和勇气。雷波段的茶马古道不仅是商贸要道，更是多民族文化交流的纽带，彝族、汉族等多个民族的文化在此交融。沿途的风景秀丽，古老的石板路蜿蜒于崇山峻岭之间，让人不禁感叹古代商旅的不易。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright &copy; 2024 中国茶马古道四川境内路线图 | 川ICP备XXXXXXXX号</p>
+    </footer>
+
+    <script>
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            const elements = document.querySelectorAll('.heritage-item');
+            elements.forEach(el => {
+                if (isElementInViewport(el)) {
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll);
+    </script>
+</body>
+</html>

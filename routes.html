@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶马古道路线展示</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://webapi.amap.com/maps?v=2.0&key=87d46a09e33ea8e78d1c30e0aa6c248f"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.jpg" alt="茶马古道标志">
+        </div>
+        <h1>茶马古道路线展示</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="heritage.html">遗产介绍</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>茶马古道简介</h2>
+            <p>茶马古道是连接中国西南地区与西藏的古代商贸路线，见证了数百年的文化交流和贸易往来。这些路线不仅运输茶叶和马匹，还促进了不同民族间的文化交流。</p>
+        </section>
+        <section id="map-container">
+            <h2>路线地图</h2>
+            <div id="map"></div>
+        </section>
+        <section id="route-details">
+            <h2>路线说明</h2>
+            <div class="route-info">
+                <div class="route-item" data-route="川藏北线">
+                    <span class="route-color" style="background-color: #FF0000;"></span>
+                    <span class="route-name">川藏北线路线</span>
+                </div>
+                <div class="route-item" data-route="川滇古道">
+                    <span class="route-color" style="background-color: #0000FF;"></span>
+                    <span class="route-name">川滇古道路线</span>
+                </div>
+                <div class="route-item" data-route="康藏古道">
+                    <span class="route-color" style="background-color: #e1ff00;"></span>
+                    <span class="route-name">康藏古道路线</span>
+                </div>
+                <div class="route-item" data-route="藏彝走廊">
+                    <span class="route-color" style="background-color: #00ff15;"></span>
+                    <span class="route-name">藏彝走廊路线</span>
+                </div>
+                <div class="route-item" data-route="川藏南线">
+                    <span class="route-color" style="background-color: #00fbff;"></span>
+                    <span class="route-name">川藏南线路线</span>
+                </div>
+            </div>
+            <p>点击地图上的路线可查看详细信息。</p>
+        </section>
+        <section id="route-info-display">
+            <h2>路线详细信息</h2>
+            <div id="route-info-content"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 中国茶马古道四川境内路线图</p>
+    </footer>
+    <script src="map.js"></script>
+</body>
+</html>
